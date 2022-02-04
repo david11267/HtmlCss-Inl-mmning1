@@ -130,8 +130,22 @@
     <textarea name="self reporting input" id="self reporting" cols="30" rows="10"></textarea><br>
 
     <input type="submit" name="" value="Submit form">
+    <br>
 
+    <canvas id="myCanvas" width="200" height="100" style="border:1px solid #cc0101;">
+      <script>
+        var c = document.getElementById("myCanvas")
+        var penPos = c.getContext("2d")
+        penPos.moveTo(0,0)
+        penPos.lineTo(200,100)
+        penPos.moveTo(0,100)
+        penPos.lineTo(100,0)
+        penPos.stroke()
+        penPos.font = "30px Arial"
+        penPos.fillText("Hello bro", 30, 60 )
 
+        </script>
+    </canvas>
     </form>
   </body>
 </html>
